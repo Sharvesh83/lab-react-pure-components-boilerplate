@@ -1,0 +1,1 @@
+The Pure Function counter is more efficient because it only re-render only when there is change, while the Simple Function counter re-renders every time there is a change ( ie., When the setToggle is changed every time).

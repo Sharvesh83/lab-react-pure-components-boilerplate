@@ -23,13 +23,17 @@ class PureCounterComponent extends PureComponent {
     }));
   };
 
+  componentDidMount() {
+    console.log('This is Pure Component');
+  }
+
   render() {
     return (
       <div>
         <h2>Pure Counter</h2>
         <p>Counter: {this.state.counter}</p>
-        <button onClick={this.handleToggle}>Set Toggle</button>
         <button onClick={this.handleIncrement}>Increment</button>
+        <button onClick={this.handleToggle}>Set Toggle</button>
       </div>
     );
   }

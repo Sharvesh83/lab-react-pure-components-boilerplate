@@ -23,13 +23,17 @@ class SimpleCounterComponent extends Component {
     }));
   };
 
+  componentDidMount() {
+    console.log('This is Simple Component');
+  }
+
   render() {
     return (
       <div>
         <h2>Simple Counter</h2>
         <p>Counter: {this.state.counter}</p>
-        <button onClick={this.handleToggle}>Set Toggle</button>
         <button onClick={this.handleIncrement}>Increment</button>
+        <button onClick={this.handleToggle}>Set Toggle</button>
       </div>
     );
   }
